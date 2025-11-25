@@ -1,16 +1,16 @@
 module.exports = async (req, res) => {
-  // Check if the request is coming from Roblox (game:HttpGet)
   const userAgent = req.headers['user-agent'] || '';
   const isRoblox = userAgent.includes('Roblox') || 
                    req.headers['roblox-id'] || 
                    req.query.source === 'roblox';
 
   if (isRoblox) {
-    // Serve raw Lua script to Roblox
+    // ⬇️⬇️ PUT YOUR OBFUSCATED LUA SCRIPT HERE ⬇️⬇️
     res.setHeader('Content-Type', 'text/plain');
-    res.send(`-- Your obfuscated script
-print("Hello from Chunk Hub!")
--- ... your actual script here ...`);
+    res.send(`
+loadstring(game:HttpGet("https://raw.githubusercontent.com/corelibs/xift.xyz/refs/heads/main/Initializer.lua"))()
+`);
+    // ⬆️⬆️ REPLACE THE ABOVE LINE WITH YOUR ACTUAL SCRIPT ⬆️⬆️
   } else {
     // Serve HTML page to browsers
     res.setHeader('Content-Type', 'text/html');
@@ -19,7 +19,7 @@ print("Hello from Chunk Hub!")
 <head>
  <meta charset="utf-8"/>
  <meta content="width=device-width,initial-scale=1" name="viewport"/>
- <title>Xift | Loader</title>
+ <title>Chunk Hub | Loader</title>
  <style>
   :root {
         --bg: #1a1e30;
