@@ -19,7 +19,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/corelibs/xift.xyz/ref
 <head>
  <meta charset="utf-8"/>
  <meta content="width=device-width,initial-scale=1" name="viewport"/>
- <title>Vyx | Loader</title>
+ <title>Xift | Loader</title>
  <style>
   :root {
         --bg: #1a1e30;
@@ -147,7 +147,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/corelibs/xift.xyz/ref
    <pre><code class="lua" id="code"></code></pre>
   </div>
   <div class="hint">
-   Contents can not be displayed on browser • https://discord.gg/66twJ78sTH
+   Thank you, for using Xift! Join our discord server
   </div>
  </div>
  <script>
