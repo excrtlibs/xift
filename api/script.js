@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
     // ⬇️⬇️ PUT YOUR OBFUSCATED LUA SCRIPT HERE ⬇️⬇️
     res.setHeader('Content-Type', 'text/plain');
     res.send(`
-loadstring(game:HttpGet("https://raw.githubusercontent.com/corelibs/xift.xyz/refs/heads/main/Initializer.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/corelibs/seafoam/refs/heads/main/Initializer.lua"))()
 `);
     // ⬆️⬆️ REPLACE THE ABOVE LINE WITH YOUR ACTUAL SCRIPT ⬆️⬆️
   } else {
@@ -19,7 +19,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/corelibs/xift.xyz/ref
 <head>
  <meta charset="utf-8"/>
  <meta content="width=device-width,initial-scale=1" name="viewport"/>
- <title>Xift | Loader</title>
+ <title>Seafoam • Loader</title>
  <style>
   :root {
         --bg: #1a1e30;
@@ -137,7 +137,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/corelibs/xift.xyz/ref
  <div class="container">
   <div class="brand">
    <div class="brand-text">
-    Xift Loader
+    Seafoam Loader
    </div>
   </div>
   <div aria-label="Read-only code editor" class="editor" role="region">
@@ -147,7 +147,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/corelibs/xift.xyz/ref
    <pre><code class="lua" id="code"></code></pre>
   </div>
   <div class="hint">
-   Thank you, for using Xift! Join our discord server • .gg/xhJkMUKHyP
+   Thank you, for using Seafoam! Join our discord server • .gg/fkZbCUbEAR
   </div>
  </div>
  <script>
